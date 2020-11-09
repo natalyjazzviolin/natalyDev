@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         name: 'blog',
-        link: '/blog'
+        link: '/#blog'
       },
       {
         name: 'contact',
@@ -52,9 +52,24 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
+    }
   ],
 }

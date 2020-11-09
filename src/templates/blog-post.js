@@ -18,13 +18,14 @@ export const query = graphql`
 const BlogPost = props => {
   return (
     <Layout>
-      <div>
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <span>
+      <div className="md:mt-20 mt-10">
+        <h1 className="lg:text-4xl md:text-2xl text-lg underline font-semibold py-4">{props.data.markdownRemark.frontmatter.title}</h1>
+        <span className="lg:text-xl md:text-base text-xs">
           Posted on {props.data.markdownRemark.frontmatter.date}{" "}
           <span> / </span> {props.data.markdownRemark.timeToRead} min read
         </span>
         <div
+        className="lg:text-2xl md:text-xl text-base mt-6"
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         >
 </div>

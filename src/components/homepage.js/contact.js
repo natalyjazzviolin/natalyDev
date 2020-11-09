@@ -1,7 +1,7 @@
 import React from "react"
 
 
-const ContactForm = () => {
+const ContactFormOld = () => {
     return (
         <div>
            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwBT_mHk9fBqpJOwfukOMgA40-Cs-dvWk9t3JGcz-bB0E1j-sdI/exec">
@@ -25,4 +25,4 @@ const ContactForm = () => {
     )
 }
 
-export default ContactForm;
+export default ContactFormOld;

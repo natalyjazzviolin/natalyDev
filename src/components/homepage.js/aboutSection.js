@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import WiderCard from "../building blocks/widerCard"
+import Card from "../building blocks/card"
 import Button from "../button"
 
 const AboutSection = () => {
@@ -21,16 +21,17 @@ const AboutSection = () => {
       }
     `)
     return (
-      <WiderCard
+      <Card
       leftSide={<Img class="" 
       imgStyle={{ objectFit: 'cover' }}
       fluid={data.file.childImageSharp.fluid} alt="Nataly Merezhuk" 
       />}
       title={"Hello, I'm Nataly Merezhuk."}
       description={"Web developer and violinist based out of Baltimore, MD."}
-      button={<a>View my work →</a>}
-      
-      
+      buttonOne={<a>Resume</a>}
+      buttonTwo={<a>Portfolio</a>}
+      blogText={"View my violin website →"}
+      blog={"www.natalyjazzviolin.com"}
       
       
       />

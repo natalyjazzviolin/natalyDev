@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
-import WiderCard from "../building blocks/widerCard"
+import Card from "../building blocks/card"
 
 
 const MoreProjects = () => {
@@ -34,11 +34,15 @@ const MoreProjects = () => {
             },
           ]
     return (
-        <WiderCard
-        leftSide={<p>hello</p>}
-        title={"More projects"}
-        description={"More projects built with JavaScript, React and Gatsby"}
-        button={<a>This way →</a>}
+        <Card
+        
+        title={"Hello, I'm Nataly Merezhuk."}
+        description={"Web developer and violinist based out of Baltimore, MD."}
+        buttonOne={<a>GitHub</a>}
+        buttonTwo={<a>Demos</a>}
+        
+        
+        
         />
         
     )

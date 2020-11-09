@@ -1,37 +1,59 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Button from "../button"
 
 
 const BlogSection = () => {
-    return (
-        <div class="flex flex-wrap h-screen/75 justify-evenly rounded-lg w-full overflow-hidden">
-            <div class="m-2 md:-m-2 border max-h-35 md:max-h-3/4 w-full md:w-screen/27 grid grid-cols-3 md:grid-rows-3 bg-gray-800">
-                <h2 class=" md:row-span-1 md:col-span-3 bg-white w-full">hello</h2>
-                <p class="md:row-start-2 md:col-span-3 bg-gray-300"></p>
-                <div class="md:row-start-3 md:col-span-3 bg-white md:flex md:justify-between">
-                    <Link class="mt-10"><Button>Link</Button></Link>
-                    <Link class="mt-10"><Button>Link</Button></Link>
-                </div>
-            </div>
-            <div class="border max-h-35 md:max-h-full w-full md:w-screen/27 grid grid-cols-3 md:grid-rows-3 bg-gray-800">
-                <h2 class="md:row-span-1 md:col-span-3 bg-white w-full">hello</h2>
-                <p class="md:row-start-2 md:col-span-3 bg-gray-300"></p>
-                <div class="md:row-start-3 md:col-span-3 w-full">
-                    <Link class="inline-block"><Button>Link</Button></Link>
-                    <Link class="inline-block"><Button>Link</Button></Link>
-                </div>
-            </div>
-            <div class="border max-h-35 md:max-h-full w-full md:w-screen/27 grid grid-cols-3 md:grid-rows-3 bg-gray-800">
-                <h2 class="md:row-span-1 md:col-span-3 bg-white w-full">hello</h2>
-                <p class="md:row-start-2 md:col-span-3 bg-gray-300"></p>
-                <div class="md:row-start-3 md:col-span-3 w-full">
-                    <Link class="inline-block"><Button>Link</Button></Link>
-                    <Link class="inline-block"><Button>Link</Button></Link>
-                </div>
-            </div>
-        </div>
-    )
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(limit: 3, sort: { fields: frontmatter___date, order: DESC }) {
+          edges {
+            node {
+              frontmatter {
+                title
+                date(formatString: "DD MMMM, YYYY")
+              }
+              timeToRead
+              excerpt
+              id
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  return (
+    <div  >
+      <ul  >
+        {data.allMarkdownRemark.edges.map(edge => {
+          return (
+            <li key={edge.node.id}>
+                <h2 className="lg:text-2xl md:text-xl text-base underline">
+                    <Link to={`/blog/${edge.node.fields.slug}/`}>
+                        {edge.node.frontmatter.title}
+                    </Link>
+                </h2>
+              <div className="lg:text-xl md:text-base text-xs">
+                <span>
+                  Posted on {edge.node.frontmatter.date} <span> / </span>{" "}
+                  {edge.node.timeToRead} min read
+                </span>
+              </div>
+              <p className="lg:text-xl md:text-base text-xs">{edge.node.excerpt}</p>
+              <div className=" md:text-xl text-sm mb-4 text-blue-700 underline">
+                    <Link to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
+              </div>
+            </li>
+          )
+        })}
+      </ul>
+        <Button><Link to="/blog">View All →</Link></Button>
+    </div>
+  )
 }
 
-export default BlogSection;
+export default BlogSection

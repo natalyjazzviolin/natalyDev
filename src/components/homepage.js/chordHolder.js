@@ -38,9 +38,10 @@ const ChordHolder = () => {
             leftSide={<Img fluid={sources} alt="Chord Holder" />}
             title={"Chord Holder"}
             description={"A vanilla javascript web app that plays & switches between two chords."}
-            buttonOne={<a>GitHub</a>}
+            buttonOne={<a>Code</a>}
             buttonTwo={<a>Demo</a>}
             blog={"/blog"}
+            blogText={"Read more on the blog..."}
             
             
             />
