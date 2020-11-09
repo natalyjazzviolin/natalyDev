@@ -26,7 +26,7 @@ const Index = () => {
       <div id="blog" className="h-screen overflow-hidden grid -mt-4 place-items-center">
         <BlogSection />
       </div>
-      <div id="contact" className="h-screen">
+      <div id="contact" className="h-screen overflow-hidden grid -mt-4 place-items-center">
         <ContactForm />
       </div>
     </Layout>

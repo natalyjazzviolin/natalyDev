@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import DesktopMenu from "./Navigation/desktopMenu";
+import Footer from "../components/Navigation/footer"
 if (typeof window !== "undefined") {
     // eslint-disable-next-line global-require
     require("smooth-scroll")('a[href*="#"]')
@@ -45,6 +46,7 @@ if (typeof window !== "undefined") {
           >
             {children}
           </div>
+          <Footer />
         </React.Fragment>
       )}
     />
