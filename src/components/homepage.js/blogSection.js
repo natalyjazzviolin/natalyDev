@@ -7,7 +7,7 @@ const BlogSection = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(limit: 3, sort: { fields: frontmatter___date, order: DESC }) {
+        allMarkdownRemark(limit: 2, sort: { fields: frontmatter___date, order: DESC }) {
           edges {
             node {
               frontmatter {
@@ -28,6 +28,7 @@ const BlogSection = () => {
   )
   return (
     <div  >
+      <h2 className="lg:text-5xl md:text-3xl text-2xl bold mb-4">Latest Blog Posts</h2>
       <ul  >
         {data.allMarkdownRemark.edges.map(edge => {
           return (

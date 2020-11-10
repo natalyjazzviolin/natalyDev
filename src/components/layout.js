@@ -30,8 +30,8 @@ if (typeof window !== "undefined") {
           <Helmet
             title={'title'}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Nataly Merezhuk - web developer and violinist based out of Baltimore, MD.' },
+              { name: 'keywords', content: 'web developer, fullstack developer, violinist' },
             ]}
           >
           </Helmet>

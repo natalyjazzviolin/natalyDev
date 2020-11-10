@@ -1,6 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 
+
+
+
 import AboutSection from "../components/homepage.js/aboutSection"
 import NYTClone from "../components/homepage.js/NYTClone"
 import ChordHolder from "../components/homepage.js/chordHolder"
@@ -26,7 +29,7 @@ const Index = () => {
       <div id="blog" className="h-screen overflow-hidden grid -mt-4 place-items-center">
         <BlogSection />
       </div>
-      <div id="contact" className="h-screen overflow-hidden grid -mt-4 place-items-center">
+      <div id="contact" className="h-screen overflow-hidden grid -mt-10 md:mt-4 place-items-center">
         <ContactForm />
       </div>
     </Layout>
