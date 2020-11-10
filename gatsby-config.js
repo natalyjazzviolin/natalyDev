@@ -17,11 +17,11 @@ module.exports = {
       },
       {
         name: 'portfolio',
-        link: '/#portfolio'
+        link: '/projects'
       },
       {
         name: 'blog',
-        link: '/#blog'
+        link: '/blog'
       },
       {
         name: 'contact',

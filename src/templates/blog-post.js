@@ -25,7 +25,7 @@ const BlogPost = props => {
           <span> / </span> {props.data.markdownRemark.timeToRead} min read
         </span>
         <div
-        className="lg:text-2xl md:text-xl text-base mt-6"
+        className="md:text-xl text-base mt-6"
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         >
 </div>
