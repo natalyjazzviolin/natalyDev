@@ -38,8 +38,8 @@ const NYTClone = () => {
             leftSide={<Img fluid={sources} alt="Chord Holder" />}
             title={"NYT Scroll Clone"}
             description={"A vanilla javascript web app that plays & switches between two chords."}
-            buttonOne={<a>Code</a>}
-            buttonTwo={<a>Demo</a>}
+            buttonOne={<a href="https://github.com/natalyjazzviolin/scroll-site">Code</a>}
+            buttonTwo={<a href="https://nyt-scroll.netlify.app/">Demo</a>}
             blog={"/blog"}
             blogText={"Read more on the blog..."}
             

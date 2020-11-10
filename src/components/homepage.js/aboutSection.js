@@ -29,9 +29,9 @@ const AboutSection = () => {
       title={"Hello, I'm Nataly Merezhuk."}
       description={"Web developer and violinist based out of Baltimore, MD."}
       buttonOne={<a>Resume</a>}
-      buttonTwo={<a>Portfolio</a>}
-      blogText={"View my violin website →"}
-      blog={"www.natalyjazzviolin.com"}
+      buttonTwo={<Link to={"/projects"}>Portfolio</Link>}
+      
+      
       
       
       />

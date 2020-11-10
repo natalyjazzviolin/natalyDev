@@ -12,9 +12,9 @@ const MoreProjects = () => {
                 More Projects..
             </h2>
             <p className="lg:text-4xl md:text-2xl text-center">to view more projects that I've worked on please visit the</p>
-            <Button><Link to={"/portfolio"}>Project Gallery</Link></Button>
+            <Button><Link to={"/projects"}>Project Gallery</Link></Button>
             <p className="lg:text-4xl md:text-2xl">or</p>
-            <Button>GitHub Page</Button>
+            <a href="https://github.com/natalyjazzviolin"><Button>GitHub Page</Button></a>
         </div>
     )
 }
