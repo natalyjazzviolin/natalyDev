@@ -5,10 +5,8 @@ import { Link } from "gatsby"
 
 const Footer = () => {
  return (
-    <div className="align-end lg:-mt-8 md:-mt-16 -mt-24 grid grid-cols-1 place-items-center">
-        <span className="text-xs">
-           Made from scratch with Gatsby.js 🔥 
-        </span>
+    <div className="fixed bottom-0 mb-20 md:mb-0 grid grid-cols-1 items-center">
+        <p >Made from scratch with Gatsby.js 🔥 </p>
     </div>
  )
 }

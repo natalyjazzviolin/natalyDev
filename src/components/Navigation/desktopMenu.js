@@ -18,7 +18,7 @@ const DesktopMenu = ({ siteTitle, menuLinks}) => {
                         <li
                             key={link.name}
                         >
-                            <Link className="block p-4 md:p-6 hover:underline"
+                            <Link class="block p-4 md:p-6 hover:underline"
                              to={link.link}>
                                 {link.name}
                             </Link>

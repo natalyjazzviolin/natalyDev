@@ -1,7 +1,10 @@
 ---
 title: "Third Gatsby Blog Post"
 date: "2020-08-18"
-featured: "../images/first-post.jpg"
+project: false
+featuredImage: avatar.jpg
+Code: "/"
+Demo: "/"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.

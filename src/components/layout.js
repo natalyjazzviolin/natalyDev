@@ -46,7 +46,7 @@ if (typeof window !== "undefined") {
           >
             {children}
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </React.Fragment>
       )}
     />

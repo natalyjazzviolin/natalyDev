@@ -1,6 +1,10 @@
 ---
 title: "Second Gatsby Blog Post"
 date: "2020-01-19"
+project: false
+featuredImage: avatar.jpg
+Code: "/"
+Demo: "/"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 
