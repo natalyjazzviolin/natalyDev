@@ -42,10 +42,13 @@ const Projects = () => {
 
     return (
         <Layout>
+            <div className="md:mt-32 ">
+                <h2 className="text-center md:text-5xl text-2xl mt-10">Latest Projects</h2>
+            </div>
             <ul className="flex flex-wrap">
                 {data.allMarkdownRemark.edges.map(edge => {
                     return (
-                        <li className="md:max-h-80 grid grid-flow-row md:grid-flow-col auto-rows-max" key={edge.node.id}>
+                        <li className="max-h-65 md:max-h-80 grid grid-flow-row md:grid-flow-col auto-rows-max" key={edge.node.id}>
                             <div className="flex flex-wrap md:mt-32">
                                 <div className="flex-1 flex-grow h-screen w-full grid grid-flow-row md:grid-flow-col auto-rows-max">
                                     <span className="flex-1 flex-grow min-w-50  md:mr-2 mt-10 max-h-1/2 overflow-hidden">

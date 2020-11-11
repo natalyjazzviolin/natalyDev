@@ -37,7 +37,7 @@ const ChordHolder = () => {
             <Card
             leftSide={<Img fluid={sources} alt="Chord Holder" />}
             title={"Chord Holder"}
-            description={"A vanilla javascript web app that plays & switches between two chords."}
+            description={"A web app that  uses Tone.js to transform text input into an array of musical notes, then plays the notes using Tonal.js."}
             buttonOne={<a href="https://github.com/natalyjazzviolin/ChordHolder">Code</a>}
             buttonTwo={<a href="https://chord-holder.netlify.app/">Demo</a>}
             blog={"/blog"}
