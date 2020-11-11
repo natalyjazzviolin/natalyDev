@@ -8,7 +8,7 @@ const ChordHolder = () => {
     const data = useStaticQuery(graphql`
         query {
         mobileImage: file(
-            relativePath: { eq: "chordHolderWide.png" }
+            relativePath: { eq: "chord-holder.jpg" }
         ) {
             childImageSharp {
             fluid(maxWidth: 300, quality: 100) {
@@ -16,7 +16,7 @@ const ChordHolder = () => {
             }
             }
         }
-        desktopImage: file(relativePath: { eq: "chordHolderSquare.jpeg" }) {
+        desktopImage: file(relativePath: { eq: "chord-holder.jpg" }) {
             childImageSharp {
             fluid(maxWidth: 300, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG

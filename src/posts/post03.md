@@ -5,6 +5,7 @@ project: false
 featuredImage: avatar.jpg
 Code: "/"
 Demo: "/"
+description: " "
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.

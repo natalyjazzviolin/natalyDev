@@ -28,6 +28,7 @@ const Projects = () => {
                     }
                     Code
                     Demo
+                    description
                   }
                   id
                 }
@@ -47,13 +48,13 @@ const Projects = () => {
                         <li className="md:max-h-80 grid grid-flow-row md:grid-flow-col auto-rows-max" key={edge.node.id}>
                             <div className="flex flex-wrap md:mt-32">
                                 <div className="flex-1 flex-grow h-screen w-full grid grid-flow-row md:grid-flow-col auto-rows-max">
-                                    <span className="flex-1 flex-grow min-w-50 -pb-10 md:mr-2 mt-10 max-h-1/2 overflow-hidden">
-                                        <Img  fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid} />
+                                    <span className="flex-1 flex-grow min-w-50  md:mr-2 mt-10 max-h-1/2 overflow-hidden">
+                                        <Img  className="z-0 overflow-hidden" fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid} />
                                     </span>
-                                    <span className="flex-1 flex-grow max-h-1/2  md:mt-8 -mt-32">
+                                    <span className="z-10 flex-1 flex-grow max-h-1/2  md:mt-8 -mt-32">
                                         <h2 className="underline md:mt-0 -mt-20 md:mb-4 md:text-4xl text-base">{edge.node.frontmatter.title}</h2>
                                         <p className="text-red-700 md:text-base text-xs  mb-2">{edge.node.frontmatter.tags}</p>
-                                        <p className="xl:mt-20 lg:mt-10 md:text-xl md:leading-9 text-sm leading-4">You are here! This is the latest project I've developed. It uses the Gatsby static site generator and TailwindCSS for styling. Hosting and contact form are handled through Netlify.</p>
+                                        <p className="xl:mt-20 lg:mt-10 md:text-xl md:leading-9 text-sm leading-4">{edge.node.frontmatter.description}</p>
                                         <span className="lg:mt-8 mt-2 grid grid-cols-2 gap-4 items-center md:gap-20">
                                             <a href={edge.node.frontmatter.Code} className="md:text-2xl bg-black text-white rounded text-center"><button>Github</button></a>
                                             <a href={edge.node.frontmatter.Demo} className="md:text-2xl border border-black rounded text-center"><button>Demo</button></a>

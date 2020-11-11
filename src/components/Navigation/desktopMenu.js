@@ -15,10 +15,10 @@ const DesktopMenu = ({ siteTitle, menuLinks}) => {
                 </div>
                 <ul className=" grid grid-cols-4 gap-1 md:gap-6 text-center md:text-lg text-xs">
                     {menuLinks.map(link => (
-                        <li
+                        <li className="p-4 md:p-6"
                             key={link.name}
                         >
-                            <Link class="block p-4 md:p-6 hover:underline"
+                            <Link class="block  hover:underline"
                              to={link.link}>
                                 {link.name}
                             </Link>

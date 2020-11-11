@@ -18,10 +18,10 @@ const Index = () => {
         <AboutSection />
       </div>
       <div id="portfolio" className="h-screen overflow-hidden grid pt-16 place-items-center">
-        <NYTClone />
+        <ChordHolder />
       </div>
       <div id="portfolio" className="h-screen overflow-hidden grid pt-16 place-items-center">
-        <ChordHolder />
+      <NYTClone />
       </div>
       <div id="portfolio" className="h-screen overflow-hidden grid pt-16 place-items-center">
         <MoreProjects />
