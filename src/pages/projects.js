@@ -43,19 +43,19 @@ const Projects = () => {
     return (
         <Layout>
             <div className="md:mt-32 ">
-                <h2 className="text-center md:text-5xl text-2xl mt-10">Latest Projects</h2>
+                <h2 className="text-center md:text-5xl text-2xl mt-10 mb-4 ">Latest Projects</h2>
             </div>
-            <ul className="lg:flex-none flex flex-wrap min-h-50">
+            <ul className="flex flex-wrap min-h-50">
                 {data.allMarkdownRemark.edges.map(edge => {
                     return (
-                        <li className="md:my-20 md:min-h-50 max-h-65 md:max-h-80 grid grid-flow-row md:grid-flow-col auto-rows-max" key={edge.node.id}>
+                        <li className="mb-10 max-h-65 md:max-h-80 grid grid-flow-row md:grid-flow-col auto-rows-max" key={edge.node.id}>
                             <div className="h-full flex flex-wrap md:mt-32">
-                                <div className="lg:flex-none flex-1 flex-grow h-screen w-full grid grid-flow-row md:grid-flow-col auto-rows-max">
-                                    <span className="lg:flex-none flex-1 flex-grow min-w-50  md:mr-2 mt-10 md:max-h-50 max-h-35 overflow-hidden">
+                                <div className="flex-1 flex-grow h-screen w-full grid grid-flow-row md:grid-flow-col auto-rows-max">
+                                    <span className="flex-1 flex-grow min-w-50  md:mr-2 md:max-h-50 max-h-35 overflow-hidden">
                                         <Img  className=" " fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid} />
                                     </span>
-                                    <span className="lg:flex-none flex-1 flex-grow max-h-1/2  md:mt-8 -mt-32">
-                                        <h2 className="underline md:mt-0 -mt-20 md:mb-4 md:text-4xl text-base">{edge.node.frontmatter.title}</h2>
+                                    <span className=" flex-1 flex-grow max-h-1/2 md:mt-0  mt-4">
+                                        <h2 className="underline md:mt-0 md:mb-4 md:text-4xl text-base">{edge.node.frontmatter.title}</h2>
                                         <p className="text-red-700 md:text-base text-xs  mb-2">{edge.node.frontmatter.tags}</p>
                                         <p className="xl:mt-20 lg:mt-10 md:text-xl md:leading-9 text-sm leading-4">{edge.node.frontmatter.description}</p>
                                         <span className="lg:mt-8 mt-2 grid grid-cols-2 gap-4 items-center md:gap-20">

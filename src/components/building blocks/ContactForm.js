@@ -8,7 +8,7 @@ const ContactForm = () => {
 
     return (
        <div >
-           <h2 className="lg:mb-0 lg:text-5xl md:text-3xl text-2xl bold mb-4 underline">Get in touch!</h2>
+           <h2 className="text-center lg:mb-0 lg:text-5xl md:text-3xl text-2xl bold mb-4 underline">Get in touch!</h2>
         <form className="grid grid-flow-row auto-rows-max" method="POST" netlify-honeypot="bot-field" action="#" name="contact" data-netlify="true">
         <input type="hidden" name="bot-field" />
         <label className="lg:my-1 md:my-2">

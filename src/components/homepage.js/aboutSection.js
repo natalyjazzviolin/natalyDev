@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Card from "../building blocks/card"
+import BioCard from "../building blocks/card"
 import Button from "../button"
 
 const AboutSection = () => {
@@ -21,7 +21,7 @@ const AboutSection = () => {
       }
     `)
     return (
-      <Card
+      <BioCard
       leftSide={<Img class="" 
       imgStyle={{ objectFit: 'cover' }}
       fluid={data.file.childImageSharp.fluid} alt="Nataly Merezhuk" 
