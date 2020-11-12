@@ -26,9 +26,9 @@ const Index = () => {
       <div id="portfolio" className="h-screen overflow-hidden grid pt-16 place-items-center">
         <MoreProjects />
       </div>
-      <div id="blog" className="h-screen overflow-hidden grid -mt-4 place-items-center">
+      {/* <div id="blog" className="h-screen overflow-hidden grid -mt-4 place-items-center">
         <BlogSection />
-      </div>
+      </div> */}
       <div id="contact" className="h-screen overflow-hidden grid -mt-10 md:mt-4 place-items-center">
         <ContactForm />
       </div>

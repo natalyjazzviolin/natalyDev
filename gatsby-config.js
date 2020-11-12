@@ -19,10 +19,10 @@ module.exports = {
         name: 'portfolio',
         link: '/projects'
       },
-      {
-        name: 'blog',
-        link: '/blog'
-      },
+      // {
+      //   name: 'blog',
+      //   link: '/blog'
+      // },
       {
         name: 'contact',
         link: '/#contact'

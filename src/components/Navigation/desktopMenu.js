@@ -13,7 +13,7 @@ const DesktopMenu = ({ siteTitle, menuLinks}) => {
                 <div className="col-span-1 grid grid-cols-2 " >
                     
                 </div>
-                <ul className=" grid grid-cols-4 gap-1 md:gap-6 text-center md:text-lg text-xs">
+                <ul className=" grid grid-cols-3 gap-1 md:gap-6 text-center md:text-lg text-xs">
                     {menuLinks.map(link => (
                         <li className="p-4 md:p-6"
                             key={link.name}
