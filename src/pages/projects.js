@@ -59,8 +59,8 @@ const Projects = () => {
                                         <p className="text-red-700 md:text-base text-xs  mb-2">{edge.node.frontmatter.tags}</p>
                                         <p className="xl:mt-20 lg:mt-10 md:text-xl md:leading-9 text-sm leading-4">{edge.node.frontmatter.description}</p>
                                         <span className="lg:mt-8 mt-2 grid grid-cols-2 gap-4 items-center md:gap-20">
-                                            <a href={edge.node.frontmatter.Code} className="md:text-2xl bg-black text-white rounded text-center"><button>Github</button></a>
-                                            <a href={edge.node.frontmatter.Demo} className="md:text-2xl border border-black rounded text-center"><button>Demo</button></a>
+                                            <a target="_blank" href={edge.node.frontmatter.Code} className="md:text-2xl bg-black text-white rounded text-center"><button>Github</button></a>
+                                            <a target="_blank" href={edge.node.frontmatter.Demo} className="md:text-2xl border border-black rounded text-center"><button>Demo</button></a>
                                         </span>
                                     </span>
                                 </div> 

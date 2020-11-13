@@ -28,7 +28,7 @@ if (typeof window !== "undefined") {
       render={data => (
         <React.Fragment>
           <Helmet
-            title={'title'}
+            title={'Nataly Merezhuk - Web Developer'}
             meta={[
               { name: 'description', content: 'Nataly Merezhuk - web developer and violinist based out of Baltimore, MD.' },
               { name: 'keywords', content: 'web developer, fullstack developer, violinist' },

@@ -44,8 +44,8 @@ const HomeProjects = () => {
                 leftSide={<Img  className=" " fluid={edge.node.frontmatter.featuredImage.childImageSharp.fluid} />}
                 title={edge.node.frontmatter.title}
                 description={edge.node.frontmatter.description}
-                buttonOne={<a href={edge.node.frontmatter.Code}>Code</a>}
-                buttonTwo={<a href={edge.node.frontmatter.Demo}>Demo</a>}
+                buttonOne={<a target="_blank" href={edge.node.frontmatter.Code}>Code</a>}
+                buttonTwo={<a target="_blank" href={edge.node.frontmatter.Demo}>Demo</a>}
                 // blog={"/blog"}
                 // blogText={"Read more on the blog..."}
                 />

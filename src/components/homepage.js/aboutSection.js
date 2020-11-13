@@ -28,7 +28,7 @@ const AboutSection = () => {
       />}
       title={"Hello, I'm Nataly Merezhuk."}
       description={"Web developer and violinist based out of Baltimore, MD."}
-      buttonOne={<a>Resume</a>}
+      buttonOne={<a target="_blank" href="https://drive.google.com/file/d/1zEVG1WtGteHJc2_R67k2kVfnu3PuMYjS/view?usp=sharing">Resume</a>}
       buttonTwo={<Link to={"/projects"}>Portfolio</Link>}
       
       
