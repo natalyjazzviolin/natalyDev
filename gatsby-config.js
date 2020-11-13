@@ -10,6 +10,7 @@ module.exports = {
     title: 'Nataly.dev',
     description: 'web developer and violinist based out of Baltimore, MD',
     author: 'Nataly Merezhuk',
+    image: "/images/nataly-avatar.jpg",
     menuLinks: [
       {
         name: 'nataly.dev',
