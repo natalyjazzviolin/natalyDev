@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import BioCard from "../building blocks/card"
+import BioCard from "../building blocks/bioCard"
 import Button from "../button"
 
 const AboutSection = () => {
